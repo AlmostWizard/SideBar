@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>Right</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <div class="user">
+        <img src="004tho_ons_mas_mob_04.jpg" alt="" class="user-img" />
+        <div>
+          <p class="bold">L Junior</p>
+          <p>Admin</p>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="charts.html">
+            <i class="bx bxs-pie-chart-alt-2"></i>
+            <span class="nav-item">Charts</span>
+          </a>
+          <span class="tooltip">Charts</span>
+        </li>
+        <li>
+          <a href="graphs.html">
+            <i class="bx bx-bar-chart-square"></i>
+            <span class="nav-item">Graphs</span>
+          </a>
+          <span class="tooltip">Graphs</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxl-product-hunt"></i>
+            <span class="nav-item">Products</span>
+          </a>
+          <span class="tooltip">Products</span>
+        </li>
+        <li>
+          <a href="forms.html">
+            <i class="bx bx-file-blank"></i>
+            <span class="nav-item">Forms</span>
+          </a>
+          <span class="tooltip">Forms</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-search-alt-2"></i>
+            <span class="nav-item">Search</span>
+          </a>
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bell"></i>
+            <span class="nav-item">Notification</span>
+          </a>
+          <span class="tooltip">Notification</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bx bxl-meta"></i>
+            <span class="nav-item">Metadata</span>
+          </a>
+          <span class="tooltip">Metadata</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-cog"></i>
+            <span class="nav-item">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>new code</h1>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function () {
+      sidebar.classList.toggle("active");
+      console.log("Sidebar class list:", sidebar.classList);
+    };
+  </script>
+</html>
